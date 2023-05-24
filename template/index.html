@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block css %}
+<style>
+    
+</style>
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-md-10 mx-auto">
+                <div class="row align-items-md-stretch">
+                    <div class="col-md-4">
+                        <img src='/static/images/univariat.jpg'>
+                        <div
+                            class="h-100 p-5 text-white bg-primary border rounded-5">
+                            <h2>Univariate Analysis</h2>
+                            <p>While 'uni' means one, variate indicates a variable. Therefore, 
+                                univariate analysis is a form of analysis that only involves a single variable.
+                                 In a practical setting, a univariate analysis means the analysis of a single variable (or column) in a dataset (data table)</p>
+                            <a href="/analysis/univariate" class="btn btn-dark" type="button">View Analysis</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <img src='/static/images/Bivariate.png'>
+                        <div
+                            class="h-100 p-5 text-white bg-success border rounded-5">
+                            <h2>Bivariate Analysis</h2>
+                            <p>Bivariate analysis is one of the statistical analysis where two variables are observed. 
+                                One variable here is dependent while the other is independent. 
+                                These variables are usually denoted by X and Y. So, here we analyse the changes occured between the two variables and to what extent.</p>
+                            <a href="/analysis/bivariate" class="btn btn-dark" type="button">View Analysis</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <img src='/static/images/Sentiment.jpg' class="img">
+                        <div
+                        
+                            class="h-100 p-5 text-white bg-danger border rounded-5">
+                            <h2>Sentiment Analysis</h2>
+                            <p>Sentiment analysis involves the use of data mining, machine learning (ML), 
+                                artificial intelligence and computational linguistics to mine text for sentiment and 
+                                subjective information such as whether it is expressing positive, negative or neutral feelings.</p>
+                            <a href="/analysis/sentiment" class="btn btn-dark" type="Submit">View Analysis</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block js %}
+<script>
+    
+</script>
+{% endblock %}
